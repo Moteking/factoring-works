@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 interface Service {
   id: string;
   name: string;
@@ -13,6 +11,7 @@ interface Service {
   maxAmount: string;
   targetCustomers: string[];
   isPartner: boolean;
+  affiliateUrl: string;
 }
 
 interface ComparisonTableProps {
@@ -37,7 +36,7 @@ export default function ComparisonTable({ services }: ComparisonTableProps) {
                   <th className="px-6 py-4 text-left font-bold">入金スピード</th>
                   <th className="px-6 py-4 text-left font-bold">買取可能額</th>
                   <th className="px-6 py-4 text-left font-bold">対応対象</th>
-                  <th className="px-6 py-4 text-center font-bold">詳細</th>
+                  <th className="px-6 py-4 text-center font-bold">公式サイト</th>
                 </tr>
               </thead>
               <tbody>
@@ -71,12 +70,14 @@ export default function ComparisonTable({ services }: ComparisonTableProps) {
                       {service.targetCustomers.join('・')}
                     </td>
                     <td className="px-6 py-4 text-center">
-                      <Link
-                        href={`/services/${service.slug}`}
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition text-sm"
+                      <a
+                        href={service.affiliateUrl}
+                        target="_blank"
+                        rel="nofollow sponsored noopener noreferrer"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition text-sm"
                       >
-                        詳細を見る
-                      </Link>
+                        公式サイトへ
+                      </a>
                     </td>
                   </tr>
                 ))}
@@ -88,7 +89,7 @@ export default function ComparisonTable({ services }: ComparisonTableProps) {
         {/* CTA */}
         <div className="text-center mt-8">
           <p className="text-gray-600 mb-4">
-            さらに詳しい情報を知りたい方は、各サービスの詳細ページをご覧ください
+            気になるサービスがあれば、公式サイトで詳細をご確認ください
           </p>
         </div>
       </div>

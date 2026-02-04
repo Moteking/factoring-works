@@ -94,22 +94,15 @@ export default function Top3Services({ services }: Top3ServicesProps) {
                     </ul>
                   </div>
 
-                  <div className="flex flex-col gap-3">
-                    <Link
-                      href={`/services/${service.slug}`}
-                      className="bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-3 px-6 rounded-lg transition"
-                    >
-                      詳細を見る
-                    </Link>
-                    <a
-                      href={service.affiliateUrl}
-                      target="_blank"
-                      rel="nofollow sponsored noopener noreferrer"
-                      className="bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 px-6 rounded-lg transition shadow-md"
-                    >
-                      公式サイトへ
-                    </a>
-                  </div>
+                  {/* 公式サイトへボタンのみ */}
+                  <a
+                    href={service.affiliateUrl}
+                    target="_blank"
+                    rel="nofollow sponsored noopener noreferrer"
+                    className="block bg-orange-500 hover:bg-orange-600 text-white text-center font-bold py-3 px-6 rounded-lg transition shadow-md"
+                  >
+                    公式サイトへ
+                  </a>
                 </div>
               </div>
             );
