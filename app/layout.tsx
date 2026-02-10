@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     canonical: "https://factoring-guide.vercel.app",
   },
   verification: {
-    google: "google-site-verification-code-here",
+    google: "XtBQC-ybTse0G02c6FHIYljb9Una8c3FpOBoQF9RJZk",
   },
 };
 
