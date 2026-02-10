@@ -1,0 +1,4 @@
+{
+  "/not-found": "app/not-found.js",
+  "/column/[slug]/page": "app/column/[slug]/page.js"
+}

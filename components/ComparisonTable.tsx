@@ -1,16 +1,15 @@
+import Link from "next/link";
+
 interface Service {
   id: string;
   name: string;
   slug: string;
-  fees: {
-    display: string;
-  };
-  speed: {
-    display: string;
-  };
-  maxAmount: string;
-  targetCustomers: string[];
-  isPartner: boolean;
+  fee: { min: number; max: number };
+  speed: string;
+  speedMinutes: number;
+  minAmount: number | null;
+  maxAmount: number | null;
+  target: string[];
   affiliateUrl: string;
 }
 
@@ -20,79 +19,71 @@ interface ComparisonTableProps {
 
 export default function ComparisonTable({ services }: ComparisonTableProps) {
   return (
-    <section id="compare" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          全サービス比較表
-        </h2>
-        
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead className="bg-blue-900 text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left font-bold">会社名</th>
-                  <th className="px-6 py-4 text-left font-bold">手数料</th>
-                  <th className="px-6 py-4 text-left font-bold">入金スピード</th>
-                  <th className="px-6 py-4 text-left font-bold">買取可能額</th>
-                  <th className="px-6 py-4 text-left font-bold">対応対象</th>
-                  <th className="px-6 py-4 text-center font-bold">公式サイト</th>
-                </tr>
-              </thead>
-              <tbody>
-                {services.map((service, index) => (
-                  <tr
-                    key={service.id}
-                    className={`${
-                      index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-                    } hover:bg-blue-50 transition`}
+    <div className="overflow-x-auto">
+      <table className="w-full bg-white rounded-lg shadow-md">
+        <thead>
+          <tr className="bg-primary text-white">
+            <th className="py-4 px-4 text-left font-bold">会社名</th>
+            <th className="py-4 px-4 text-left font-bold">手数料</th>
+            <th className="py-4 px-4 text-left font-bold">入金スピード</th>
+            <th className="py-4 px-4 text-left font-bold">買取可能額</th>
+            <th className="py-4 px-4 text-left font-bold">対応対象</th>
+            <th className="py-4 px-4 text-center font-bold">詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          {services.map((service, index) => (
+            <tr 
+              key={service.id} 
+              className={`border-b hover:bg-blue-50 transition ${index % 2 === 0 ? 'bg-white' : 'bg-slate-50'}`}
+            >
+              <td className="py-4 px-4">
+                <div className="font-bold text-slate-800">{service.name}</div>
+              </td>
+              <td className="py-4 px-4">
+                <span className="text-primary font-bold">
+                  {service.fee.min}%〜{service.fee.max}%
+                </span>
+              </td>
+              <td className="py-4 px-4">
+                <span className="text-accent font-bold">{service.speed}</span>
+              </td>
+              <td className="py-4 px-4 text-sm">
+                {service.minAmount ? `${(service.minAmount / 10000).toFixed(0)}万円` : "制限なし"}
+                〜
+                {service.maxAmount ? `${(service.maxAmount / 100000000).toFixed(0)}億円` : "上限なし"}
+              </td>
+              <td className="py-4 px-4">
+                <div className="flex flex-wrap gap-1">
+                  {service.target.map((t) => (
+                    <span key={t} className="px-2 py-1 bg-slate-200 text-slate-700 text-xs rounded">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </td>
+              <td className="py-4 px-4 text-center">
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={service.affiliateUrl}
+                    target="_blank"
+                    rel="nofollow sponsored noopener noreferrer"
+                    className="bg-accent hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition text-sm"
                   >
-                    <td className="px-6 py-4 font-bold text-gray-900">
-                      <div className="flex items-center gap-2">
-                        {service.name}
-                        {service.isPartner && (
-                          <span className="bg-green-500 text-white px-2 py-0.5 rounded text-xs font-bold">
-                            ⭐ 提携中
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 text-blue-900 font-semibold">
-                      {service.fees.display}
-                    </td>
-                    <td className="px-6 py-4 text-blue-900 font-semibold">
-                      {service.speed.display}
-                    </td>
-                    <td className="px-6 py-4 text-gray-700">
-                      {service.maxAmount}
-                    </td>
-                    <td className="px-6 py-4 text-gray-700">
-                      {service.targetCustomers.join('・')}
-                    </td>
-                    <td className="px-6 py-4 text-center">
-                      <a
-                        href={service.affiliateUrl}
-                        target="_blank"
-                        rel="nofollow sponsored noopener noreferrer"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded transition text-sm"
-                      >
-                        公式サイトへ
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-8">
-          <p className="text-gray-600 mb-4">
-            気になるサービスがあれば、公式サイトで詳細をご確認ください
-          </p>
-        </div>
-      </div>
-    </section>
+                    公式サイト
+                  </a>
+                  <Link
+                    href={`/services/${service.slug}`}
+                    className="text-primary hover:text-blue-800 font-bold text-sm"
+                  >
+                    詳細を見る →
+                  </Link>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
