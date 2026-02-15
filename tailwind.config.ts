@@ -9,12 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E40AF",
-        secondary: "#3B82F6",
-        accent: "#F97316",
-      },
-      fontFamily: {
-        sans: ["Noto Sans JP", "sans-serif"],
+        primary: '#FF8C00',
+        'primary-dark': '#E67E00',
+        navy: '#1E3A8A',
+        gray: '#6B7280',
+        'light-gray': '#F3F4F6',
       },
     },
   },

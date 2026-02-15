@@ -2,60 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #FF8C00;
+  --primary-dark: #E67E00;
+  --navy: #1E3A8A;
+  --gray: #6B7280;
+  --light-gray: #F3F4F6;
+  --white: #FFFFFF;
+}
+
 body {
-  @apply antialiased;
+  color: #333;
+  background: var(--white);
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .section-padding {
+    @apply py-16;
   }
-}
-
-/* Prose styling for column pages */
-.prose h2 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #1e293b;
-  border-bottom: 3px solid #f97316;
-  padding-bottom: 0.5rem;
-}
-
-.prose h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #334155;
-}
-
-.prose h4 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-top: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #475569;
-}
-
-.prose p {
-  margin-bottom: 1rem;
-  color: #475569;
-}
-
-.prose ul,
-.prose ol {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-}
-
-.prose li {
-  margin-bottom: 0.5rem;
-  color: #475569;
-}
-
-.prose strong {
-  color: #1e40af;
-  font-weight: 700;
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-5;
+  }
 }
