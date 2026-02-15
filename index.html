@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日本最大級のファクタリング紹介メディア | Factoring Media</title>
+<meta name="description" content="審査通過率90%、最短2時間入金。国内No.1のファクタリング比較サイトで、手数料1〜20%、担保・保証人不要の優良ファクタリング会社を無料比較。">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+<style>
+:root {
+  --primary: #FF8C00;
+  --primary-dark: #E67E00;
+  --navy: #1E3A8A;
+  --gray: #6B7280;
+  --light-gray: #F3F4F6;
+  --white: #FFFFFF;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --border-radius: 12px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', 'Yu Gothic', YuGothic, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: var(--white);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+.nav-links a {
+  margin-left: 2rem;
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: var(--primary);
+}
+.hero {
+  background: linear-gradient(135deg, #FFF5E6 0%, #FFEAD8 100%);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: var(--gray);
+  margin-bottom: 2rem;
+}
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.stat-item {
+  background: var(--white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+.stat-item strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+.stat-item span {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(255,140,0,0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255,140,0,0.4);
+}
+.btn-outline {
+  background: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+section {
+  padding: 4rem 0;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 3rem;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.card p {
+  color: var(--gray);
+  line-height: 1.8;
+}
+.bg-light {
+  background: var(--light-gray);
+}
+.criteria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.criteria-card {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.criteria-card img {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+.criteria-card h4 {
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.criteria-card p {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+.flow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.flow-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.flow-number {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.flow-content h3 {
+  font-size: 1.3rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.flow-content p {
+  color: var(--gray);
+  line-height: 1.8;
+}
+.comparison-table {
+  overflow-x: auto;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead th {
+  background: var(--primary);
+  color: var(--white);
+  padding: 1rem;
+  text-align: left;
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary-dark);
+}
+tbody td {
+  padding: 1rem;
+  border-bottom: 1px solid #E5E7EB;
+  color: var(--gray);
+}
+tbody tr:hover {
+  background: var(--light-gray);
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.testimonial {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.testimonial::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 4rem;
+  color: var(--primary);
+  opacity: 0.2;
+}
+.testimonial-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.testimonial-tag {
+  background: var(--light-gray);
+  color: var(--gray);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.testimonial p {
+  color: var(--gray);
+  line-height: 1.8;
+  font-style: italic;
+}
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1.5rem;
+  background: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+.faq-question:hover {
+  background: var(--light-gray);
+}
+.faq-answer {
+  padding: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s, padding 0.3s;
+  color: var(--gray);
+  line-height: 1.8;
+}
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 0 1.5rem 1.5rem;
+}
+.faq-icon {
+  transition: transform 0.3s;
+}
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+footer {
+  background: var(--navy);
+  color: var(--white);
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.footer-section h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.footer-section a {
+  color: #D1D5DB;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+.footer-section a:hover {
+  color: var(--primary);
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #9CA3AF;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .cards, .criteria-grid, .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .flow-item {
+    grid-template-columns: 60px 1fr;
+  }
+  .flow-number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <nav class="container">
+    <a href="#" class="logo">Factoring Media</a>
+    <div class="nav-links">
+      <a href="#comparison">比較で探す</a>
+      <a href="#guide">ガイド</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>審査通過率90%<br>最短2時間入金<br>国内No.1※のファクタリング比較サイト</h1>
+        <p>手数料1〜20%、担保・保証人不要。最大5社を無料比較できます。</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>600人+</strong>
+            <span>月間利用者数</span>
+          </div>
+          <div class="stat-item">
+            <strong>90%</strong>
+            <span>審査通過率</span>
+          </div>
+          <div class="stat-item">
+            <strong>2時間</strong>
+            <span>最短入金</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="#comparison" class="btn btn-primary">優良会社を比較する</a>
+          <a href="#guide" class="btn btn-outline">はじめての方へ</a>
+        </div>
+        <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--gray);">※2025年4月時点 ファクタリング口コミサイト ahrefsより</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://www.genspark.ai/api/files/s/395sh6ao?cache_control=3600" alt="ファクタリングイメージ">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reasons">
+  <div class="container">
+    <h2 class="section-title">Factoring Media が選ばれる理由</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://www.genspark.ai/api/files/s/oLZHH38i?cache_control=3600" alt="手数料アイコン" class="card-icon">
+        <h3>業界最安水準 手数料1%〜</h3>
+        <p>複数社を一括比較することで、最安値の業者を見つけられます。手数料は1〜20%、平均5〜7%でご利用可能です。</p>
+      </div>
+      <div class="card">
+        <img src="https://www.genspark.ai/api/files/s/Cb8T8SCD?cache_control=3600" alt="担保不要アイコン" class="card-icon">
+        <h3>担保・保証人不要</h3>
+        <p>売掛債権さえあれば審査可能。担保や保証人は一切不要です。個人事業主・フリーランスの方もご利用いただけます。</p>
+      </div>
+      <div class="card">
+        <img src="https://www.genspark.ai/api/files/s/sj48nrQB?cache_control=3600" alt="反社排除アイコン" class="card-icon">
+        <h3>反社チェック済の安全企業のみ</h3>
+        <p>編集部が厳選した、反社会的勢力との関わりがない優良ファクタリング会社だけを掲載しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light" id="criteria">
+  <div class="container">
+    <h2 class="section-title">編集部が定める「優良ファクタリング」の基準</h2>
+    <div class="criteria-grid">
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/oLZHH38i?cache_control=3600" alt="手数料">
+        <h4>手数料が適正（1〜20%）</h4>
+        <p>相場を大きく超える手数料を請求する業者は掲載しません。</p>
+      </div>
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/Cb8T8SCD?cache_control=3600" alt="担保">
+        <h4>担保・保証人不要</h4>
+        <p>売掛債権のみで資金調達できる業者を厳選しています。</p>
+      </div>
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/sj48nrQB?cache_control=3600" alt="反社">
+        <h4>反社会的勢力の排除</h4>
+        <p>反社チェックを通過した企業のみ掲載しています。</p>
+      </div>
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/2AoueUMi?cache_control=3600" alt="償還">
+        <h4>償還請求権なし</h4>
+        <p>売掛先が倒産しても返済義務のない契約のみ紹介します。</p>
+      </div>
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/0pqQyFni?cache_control=3600" alt="違法">
+        <h4>違法スキームの排除</h4>
+        <p>給与ファクタリングなど違法行為を行う業者は排除しています。</p>
+      </div>
+      <div class="criteria-card">
+        <img src="https://www.genspark.ai/api/files/s/oLZHH38i?cache_control=3600" alt="透明">
+        <h4>透明性の高い契約</h4>
+        <p>契約内容が明確で、隠れた手数料のない業者のみ掲載。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="container">
+    <h2 class="section-title">ご利用の流れ（最短2時間）</h2>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-number">1</div>
+        <div class="flow-content">
+          <h3>無料見積もり依頼</h3>
+          <p>30秒で完了する簡単フォームから、売掛金額・希望額・業種などを入力してお申し込みください。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-number">2</div>
+        <div class="flow-content">
+          <h3>必要書類の提出</h3>
+          <p>請求書・通帳コピーなど最小限の書類（平均2点）をご提出いただきます。オンライン提出も可能です。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-number">3</div>
+        <div class="flow-content">
+          <h3>見積もり・条件の提示</h3>
+          <p>最大5社から見積もりと契約条件が提示されます。手数料・スピード・サービス内容を比較検討できます。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-number">4</div>
+        <div class="flow-content">
+          <h3>契約締結</h3>
+          <p>最も条件の良いファクタリング会社と契約を結びます。2社間・3社間、オンライン契約など柔軟に対応。</p>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-number">5</div>
+        <div class="flow-content">
+          <h3>入金完了</h3>
+          <p>契約後、最短30分〜2時間で指定口座に入金されます。即日対応可能な業者も多数掲載中です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light" id="comparison">
+  <div class="container">
+    <h2 class="section-title">おすすめファクタリング会社 TOP11</h2>
+    <div class="comparison-table">
+      <table id="companyTable">
+        <thead>
+          <tr>
+            <th>会社名</th>
+            <th>手数料</th>
+            <th>最短入金</th>
+            <th>対応額</th>
+            <th>個人事業主</th>
+            <th>詳細・公式サイト</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JavaScript で生成 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">お客様の声</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <div class="testimonial-meta">
+          <span class="testimonial-tag">製造業</span>
+          <span class="testimonial-tag">法人</span>
+          <span class="testimonial-tag">301〜500万円</span>
+        </div>
+        <p>手数料5%で30分後に入金されました。銀行融資の審査待ちをせずに済み、急な設備投資に間に合いました。</p>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-meta">
+          <span class="testimonial-tag">建設業</span>
+          <span class="testimonial-tag">個人事業主</span>
+          <span class="testimonial-tag">101〜300万円</span>
+        </div>
+        <p>フリーランスでも利用できました。手数料7%、3時間で入金。外注費の支払いに間に合い本当に助かりました。</p>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-meta">
+          <span class="testimonial-tag">IT業</span>
+          <span class="testimonial-tag">法人</span>
+          <span class="testimonial-tag">501万円以上</span>
+        </div>
+        <p>複数社を比較できたので、最安の手数料6%で契約できました。2時間で入金され、給与支払いに間に合いました。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light" id="faq">
+  <div class="container">
+    <h2 class="section-title">よくあるご質問</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>フリーランス・個人事業主でも利用できますか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>はい、可能です。売掛債権（請求書）があれば、個人事業主やフリーランスの方もファクタリングをご利用いただけます。掲載企業の多くが個人事業主に対応しています。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>審査にはどのくらい時間がかかりますか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>最短30分〜2時間で審査完了します。即日入金に対応している業者も多数掲載しており、お急ぎの資金調達にも対応可能です。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>2社間ファクタリングなら取引先に知られませんか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>2社間ファクタリングであれば、売掛先（取引先）に通知せずに契約できます。取引関係に影響を与えずに資金調達が可能です。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>赤字決算でも利用できますか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>はい、可能です。ファクタリングは売掛債権の信用力を審査するため、自社の決算状況が赤字でも利用できるケースが多くあります。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>手数料はどのくらいかかりますか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>手数料は1〜20%が相場です。2社間ファクタリングは5〜15%、3社間ファクタリングは1〜9%が目安です。当サイトで複数社を比較し、最安値を見つけることができます。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>必要書類は何ですか？</span>
+          <span class="faq-icon">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>通常、請求書・通帳コピー・身分証明書の3点が基本です。業者によっては決算書や取引基本契約書を求められる場合もありますが、最小限の書類で対応可能な業者を多数掲載しています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Factoring Media</h4>
+        <p>日本最大級のファクタリング紹介メディア。手数料1〜20%、審査通過率90%、最短2時間入金の優良ファクタリング会社を無料比較。</p>
+      </div>
+      <div class="footer-section">
+        <h4>サービス</h4>
+        <a href="#comparison">会社比較</a>
+        <a href="#guide">はじめての方へ</a>
+        <a href="#faq">よくあるご質問</a>
+      </div>
+      <div class="footer-section">
+        <h4>情報</h4>
+        <a href="/privacy">プライバシーポリシー</a>
+        <a href="/terms">利用規約</a>
+        <a href="/company">運営会社</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Factoring Media. All rights reserved.</p>
+      <p style="margin-top:0.5rem;font-size:0.85rem;">※当サイトはファクタリング会社の紹介・比較を目的としており、契約の斡旋・仲介は行っておりません。各社サービスの詳細は公式サイトにてご確認ください。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// DataLayer 初期化
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'page_view_media_home',
+  page_path: window.location.pathname,
+  page_location: window.location.href
+});
+
+// 会社データ（A8アフィリエイトリンク適用）
+const COMPANIES = [
+  {
+    name: 'メンターキャピタル',
+    fee: '1%〜',
+    speed: '最短2時間',
+    range: '〜1億円',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OI+4RHMA+5U0K+5YJRM'
+  },
+  {
+    name: '株式会社No.1',
+    fee: '1%〜',
+    speed: '最短即日',
+    range: '50万〜5,000万',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+FXXVXU+4EKW+TSBE9'
+  },
+  {
+    name: 'ファクタープラン',
+    fee: '2%〜',
+    speed: '最短1時間',
+    range: '100万〜1億',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+GI6MIA+5RC6+5YJRM'
+  },
+  {
+    name: 'トップ・マネジメント',
+    fee: '1%〜',
+    speed: '最短即日',
+    range: '30万〜3億',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OI+J1W4Y+3JLM+5YJRM'
+  },
+  {
+    name: 'FREENANCE（フリーナンス）',
+    fee: '3%〜',
+    speed: '最短即日',
+    range: '〜1,000万',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OI+G2Q42+47L8+5ZU29'
+  },
+  {
+    name: 'ラボル',
+    fee: '10%',
+    speed: '最短1時間',
+    range: '1万〜',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OI+3KMEQ+40JM+1BQR02'
+  },
+  {
+    name: 'ペイブリッジ',
+    fee: '2%〜',
+    speed: '最短即日',
+    range: '広告業界限定',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OI+5YCTU+3JLM+BWVTE'
+  },
+  {
+    name: '即日資金調達',
+    fee: '2%〜',
+    speed: '最短即日',
+    range: '50万〜5,000万',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+GEM0VM+5RPI+60H7L'
+  },
+  {
+    name: 'のりかえPLUS',
+    fee: '1%〜',
+    speed: '最短即日',
+    range: '50万〜1億',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+G4HNLE+5DD4+BWVTE'
+  },
+  {
+    name: 'ジャパンマネジメント',
+    fee: '2%〜',
+    speed: '最短即日',
+    range: '30万〜5,000万',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+CULTTE+3V6A+5ZEMQ'
+  },
+  {
+    name: '西日本ファクター',
+    fee: '1.5%〜',
+    speed: '最短即日',
+    range: '100万〜1億',
+    individual: '可',
+    url: 'https://px.a8.net/svt/ejp?a8mat=4AX1OH+FZQ6R6+3XT0+614CX'
+  }
+];
+
+// テーブル描画
+function renderTable(companies) {
+  const tbody = document.querySelector('#companyTable tbody');
+  tbody.innerHTML = '';
+  
+  companies.forEach((company, index) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><strong>${company.name}</strong></td>
+      <td>${company.fee}</td>
+      <td>${company.speed}</td>
+      <td>${company.range}</td>
+      <td>${company.individual}</td>
+      <td><a href="${company.url}" class="btn btn-primary" style="padding:0.5rem 1rem;font-size:0.9rem;" data-company-id="${index}" data-company-name="${company.name}">公式サイトへ</a></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // アフィリエイトリンククリック追跡
+  document.querySelectorAll('#companyTable a.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const companyId = this.getAttribute('data-company-id');
+      const companyName = this.getAttribute('data-company-name');
+      window.dataLayer.push({
+        event: 'affiliate_click',
+        company_id: companyId,
+        company_name: companyName,
+        link_url: this.href
+      });
+    });
+  });
+}
+
+// 初期描画
+renderTable(COMPANIES);
+
+// FAQ アコーディオン
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.parentElement;
+    const isActive = item.classList.contains('active');
+    
+    // 全て閉じる
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    
+    // クリックされた項目をトグル
+    if (!isActive) {
+      item.classList.add('active');
+    }
+  });
+});
+
+// スムーススクロール
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.dataLayer.push({
+        event: 'content_click',
+        click_text: this.textContent.trim(),
+        click_url: this.href
+      });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
