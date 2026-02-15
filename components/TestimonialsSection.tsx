@@ -17,15 +17,20 @@ export function TestimonialsSection() {
   return (
     <section id="testimonials" className="section-padding">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
-          お客様の声
+        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative">
+          <span className="after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
+            お客様の声
+          </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl p-8 shadow-md relative before:content-['"'] before:absolute before:top-4 before:left-6 before:text-6xl before:text-[var(--primary)] before:opacity-20"
+              className="bg-white rounded-xl p-8 shadow-md relative"
             >
+              <div className="absolute top-4 left-6 text-6xl text-[var(--primary)] opacity-20 font-serif">
+                &ldquo;
+              </div>
               <div className="flex flex-wrap gap-2 mb-4">
                 {testimonial.tags.map((tag, tagIndex) => (
                   <span 

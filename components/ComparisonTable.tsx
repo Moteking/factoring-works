@@ -18,8 +18,10 @@ export function ComparisonTable() {
   return (
     <section id="comparison" className="section-padding bg-[var(--light-gray)]">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
-          おすすめファクタリング会社 TOP11
+        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative">
+          <span className="block after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
+            おすすめファクタリング会社 TOP11
+          </span>
         </h2>
         <div className="overflow-x-auto bg-white rounded-xl shadow-md p-6">
           <table className="w-full border-collapse">

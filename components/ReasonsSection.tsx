@@ -22,8 +22,10 @@ export function ReasonsSection() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
-          Factoring Media が選ばれる理由
+        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative">
+          <span className="block after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
+            Factoring Media が選ばれる理由
+          </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason, index) => (

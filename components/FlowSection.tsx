@@ -30,8 +30,10 @@ export function FlowSection() {
   return (
     <section className="section-padding">
       <div className="container-custom">
-        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
-          ご利用の流れ（最短2時間）
+        <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative">
+          <span className="block after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
+            ご利用の流れ（最短2時間）
+          </span>
         </h2>
         <div className="flex flex-col gap-8 max-w-4xl mx-auto">
           {flowSteps.map((step) => (
