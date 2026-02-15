@@ -1,11 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 export function Header() {
-  const pathname = usePathname();
-
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 py-4">
       <nav className="container-custom">
@@ -21,10 +18,10 @@ export function Header() {
               比較で探す
             </Link>
             <Link 
-              href="#guide" 
+              href="#reasons" 
               className="text-[var(--navy)] no-underline font-medium hover:text-[var(--primary)] transition-colors"
             >
-              ガイド
+              選ばれる理由
             </Link>
             <Link 
               href="#faq" 

@@ -37,10 +37,10 @@ export function HeroSection() {
                 優良会社を比較する
               </Link>
               <Link 
-                href="#guide" 
+                href="#reasons" 
                 className="inline-block px-10 py-4 bg-white text-[var(--primary)] font-bold rounded-xl border-2 border-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all no-underline"
               >
-                はじめての方へ
+                選ばれる理由を見る
               </Link>
             </div>
             <p className="mt-6 text-xs text-[var(--gray)]">

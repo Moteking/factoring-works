@@ -20,7 +20,7 @@ const reasons = [
 
 export function ReasonsSection() {
   return (
-    <section className="section-padding">
+    <section id="reasons" className="section-padding">
       <div className="container-custom">
         <h2 className="text-4xl font-bold text-[var(--navy)] text-center mb-12 relative">
           <span className="block after:content-[''] after:block after:w-16 after:h-1 after:bg-[var(--primary)] after:mx-auto after:mt-4 after:rounded">
